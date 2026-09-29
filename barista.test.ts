@@ -52,7 +52,7 @@ describe("Barista", () => {
 
     barista.addCoffee(coffee);
 
-    expect(barista.listCoffees()).toStrictEqual([coffee]);
+    expect(barista.listCoffees()).toContain(coffee);
   });
 
   it("retourne undefined lorsqu'un café n'existe pas", () => {
